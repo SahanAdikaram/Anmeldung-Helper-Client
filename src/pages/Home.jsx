@@ -41,7 +41,8 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-   <section id="features" className="bg-white py-16">
+   // In your Home.jsx
+<section id="features" className="bg-white py-16">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
       How We Help You
@@ -49,35 +50,46 @@ const Home = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
         {
-          title: "Step-by-Step Guide",
-          description: "Detailed instructions for each part of the process",
-          path: "/step-by-step-guide"
+          title: "Visa Process",
+          subtitle: "Students & Job Seekers",
+          description: "Navigate the German visa process with our step-by-step guidance",
+          path: "/visa-process",
+          icon: "🎓"
         },
         {
-          title: "Appointment Finder",
-          description: "Locate and book appointments near you",
-          path: "/appointment-finder"
+          title: "Getting Married",
+          subtitle: "In Germany",
+          description: "Complete guide to marriage paperwork for foreigners",
+          path: "/getting-married",
+          icon: "💍"
         },
         {
-          title: "PDF Form Filler",
-          description: "Automatically fill out required forms",
-          path: "/pdf-form-filler"
+          title: "Bringing a Pet",
+          subtitle: "To Germany",
+          description: "Everything you need to import your pet to Germany",
+          path: "/bringing-pet",
+          icon: "🐕"
         },
         {
-          title: "Reminder Center",
-          description: "Never miss important deadlines",
-          path: "/reminder-center"
+          title: "Registering",
+          subtitle: "A Business",
+          description: "Start your business or freelance career in Germany",
+          path: "/registering-business",
+          icon: "💼"
         },
       ].map((feature, index) => (
         <Link 
           to={feature.path} 
           key={index} 
-          className="block bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:no-underline"
+          className="block bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow hover:no-underline group"
         >
-          <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center">
-            <span className="text-blue-600 font-bold">{index + 1}</span>
+          <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4 flex items-center justify-center text-2xl">
+            {feature.icon}
           </div>
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
+          <h3 className="text-xl font-semibold text-gray-800 mb-1 group-hover:text-blue-600">
+            {feature.title}
+          </h3>
+          <p className="text-blue-600 font-medium mb-3">{feature.subtitle}</p>
           <p className="text-gray-600">{feature.description}</p>
         </Link>
       ))}
