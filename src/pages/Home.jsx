@@ -13,11 +13,10 @@ const Home = () => {
         <section className="flex-grow container mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-              Simplify Your Registration Process
+              Empowering your journey with seamless visa support.
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Our helper app guides you through every step of your Anmeldung in
-              Germany.
+              Helping you navigate the visa process with confidence.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-lg font-medium">
@@ -221,13 +220,13 @@ const Home = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Contact</h3>
                 <ul className="space-y-2">
-                  <li className="text-gray-400">hello@anmeldunghelper.com</li>
-                  <li className="text-gray-400">Berlin, Germany</li>
+                  <li className="text-gray-400">hellovisaassistance.com</li>
+                  <li className="text-gray-400">Pfarrkirchen, Germany</li>
                 </ul>
               </div>
             </div>
             <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-              <p>© 2023 Visa Assistance App. All rights reserved.</p>
+              <p></p>
             </div>
           </div>
         </footer>
