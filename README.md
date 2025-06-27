@@ -1,3 +1,3 @@
 To run: npm run dev
 
-(Backend has been uploaded to render.com and still running)
+(Backend is working with render.com and still running :) )
