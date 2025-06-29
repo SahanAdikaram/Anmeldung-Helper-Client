@@ -19,12 +19,27 @@ const Home = () => {
               Helping you navigate the visa process with confidence.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-lg font-medium">
-                Get Started
-              </button>
-              <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 text-lg font-medium">
+              {user ? (
+                <Link
+                  to="/dashboard"
+                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-lg font-medium"
+                >
+                  Go to Dashboard
+                </Link>
+              ) : (
+                <Link
+                  to="/login"
+                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 text-lg font-medium"
+                >
+                  Get Started
+                </Link>
+              )}
+              <Link
+                to="/visa-process"
+                className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 text-lg font-medium"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center">
